@@ -1,0 +1,58 @@
+Task 2-B
+
+Problem 1:
+public List<Video> getSearchResults(Hashtable<String,
+List<Video>> videoTable, String category) {
+
+return v;
+OR:
+
+String link = null;
+LinkedList<Video> v = videoTable.get(category);
+    for (Video i : v) {
+    return link + i;
+    }
+return (some combination of links to videos and their thumbnails);
+
+}
+
+Problem 2:
+public List<Video> getRelatedVideoRecommendations(Hashtable
+<String,List<Video>> videoTable, String category) {
+
+String link = null;
+LinkedList<Video> v = videoTable.get(category);
+
+    for (Video i : v) {
+    if (i != this video)
+    link + i;
+    }
+
+return link (some combination of links to videos and their thumbnails except
+for the video that was just watched)
+
+}
+
+Task 2-C:
+Assuming I understood the task correctly, it seems as though we would be asked
+to either return a list of the most recommended videos in a category or to
+output the most recommended videos with the ones you've watched already
+filtered out. In both cases, you should use the category as a key to access
+a list of recommended videos. In the second case, however, it was important
+that the list was filtered to keep providing new options.
+
+Task 2-E
+Dear Bossperson,
+
+So far, I have learned that it is important to keep a list of videos that
+correspond to certain categories. It is also important to keep this list
+ordered by most popular to please customers. I have also learned that we will
+need to filter this list for every user in order to avoid recommending them
+the same videos. However, I have also discovered that this increases the risk
+of filter bubbles. This could keep YooToob's visitors insulated from new
+content from other genres or different perspectives. This bubble could be
+damaging and toxic to our website and its users. Therefore, we should work to
+recommend a unique variety of content from all sorts of creators, genres, and
+viewpoints to diversify our options and platform.
+
+Later skater
